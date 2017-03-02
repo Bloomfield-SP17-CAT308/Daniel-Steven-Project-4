@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -61,6 +62,9 @@
         </object-type>
         <object-type name="Player" sid="177030259753017">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="KnockBack" sid="673583696929468" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="252144310493819">
                     <behavior id="Platform" />
@@ -273,10 +277,21 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Menu" sid="741687066191419">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Title.xml</layout>
+        <layout>Instructions.xml</layout>
+        <layout>Zombie.xml</layout>
+        <layout>Modern.xml</layout>
+        <layout>Future.xml</layout>
+        <layout>Primal.xml</layout>
+        <layout>medevil.xml</layout>
+        <layout>End.xml</layout>
+        <layout>Victory.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
