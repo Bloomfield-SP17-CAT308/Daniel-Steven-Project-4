@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="5">Zombie</layout>
-        <layout active="1" order="0">Title</layout>
-        <layout order="1">Primal</layout>
+        <layout order="0">Title</layout>
+        <layout active="1" order="1">Primal</layout>
         <layout order="6">Instructions</layout>
         <layout order="2">medevil</layout>
         <layout order="7">End</layout>
@@ -47,5 +47,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SMG/" />
         <folder expanded="1" path="animation-folder/PlayerSMG/" />
         <folder expanded="1" path="animation-folder/BulletSMG/" />
+        <folder expanded="1" path="animation-folder/Bow/" />
+        <folder expanded="1" path="animation-folder/PlayerBow/" />
+        <folder expanded="1" path="animation-folder/Arrow/" />
+        <folder expanded="1" path="animation-folder/stone/" />
+        <folder expanded="1" path="animation-folder/PlayerStone/" />
+        <folder expanded="1" path="animation-folder/stoneAmmo/" />
     </folders-expanded>
 </c2uistate>
