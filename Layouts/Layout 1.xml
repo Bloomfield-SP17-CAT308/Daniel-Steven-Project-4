@@ -128,10 +128,15 @@
                         </behavior-instance>
                         <behavior-instance type="LineOfSight">
                             <properties>
-                                <obstacles>Solids</obstacles>
+                                <obstacles>Custom</obstacles>
                                 <range>10000</range>
                                 <cone-of-view>360</cone-of-view>
                                 <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -209,6 +214,11 @@
                                 <bound-by>Edge</bound-by>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -232,6 +242,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -364,10 +377,15 @@
                         </behavior-instance>
                         <behavior-instance type="LineOfSight">
                             <properties>
-                                <obstacles>Solids</obstacles>
+                                <obstacles>Custom</obstacles>
                                 <range>10000</range>
                                 <cone-of-view>360</cone-of-view>
                                 <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -446,10 +464,15 @@
                         </behavior-instance>
                         <behavior-instance type="LineOfSight">
                             <properties>
-                                <obstacles>Solids</obstacles>
+                                <obstacles>Custom</obstacles>
                                 <range>10000</range>
                                 <cone-of-view>360</cone-of-view>
                                 <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -528,10 +551,15 @@
                         </behavior-instance>
                         <behavior-instance type="LineOfSight">
                             <properties>
-                                <obstacles>Solids</obstacles>
+                                <obstacles>Custom</obstacles>
                                 <range>10000</range>
                                 <cone-of-view>360</cone-of-view>
                                 <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -743,8 +771,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>810</x>
-                        <y>-62</y>
+                        <x>442</x>
+                        <y>-76</y>
                         <z>0</z>
                         <width>15.934000015</width>
                         <height>6.790999889</height>

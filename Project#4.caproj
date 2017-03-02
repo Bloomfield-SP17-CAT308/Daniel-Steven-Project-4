@@ -71,6 +71,9 @@
                 <behavior-type name="BoundToLayout" sid="724845859174361">
                     <behavior id="bound" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="611614666628508">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="491581919957675" speed="5">
@@ -82,6 +85,11 @@
         </object-type>
         <object-type name="PlayerPistol" sid="266232400366653">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="109559098381922">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="368026844535641" speed="5">
                     <frame duration="1" hotspotX="-0.375" hotspotY="0.495652">
@@ -126,6 +134,9 @@
                 </behavior-type>
                 <behavior-type name="LineOfSight" sid="598690024852243">
                     <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="515886710585932">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <container>

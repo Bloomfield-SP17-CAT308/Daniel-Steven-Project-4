@@ -56,70 +56,80 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="650151272990153">
+                <event-block sid="451785519990632">
                     <conditions>
-                        <condition id="-8" name="Compare two values" sid="861542179022567" type="System">
-                            <param id="0" name="First value">Player.X</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Second value">Enemy.X-5</param>
-                        </condition>
-                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="780595572072206" type="Enemy">
-                            <param id="0" name="Object">Player</param>
+                        <condition id="-11" name="For Each" sid="908440191894017" type="System">
+                            <param id="0" name="Object">Enemy</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="419229941541098" type="Enemy">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="749240002396321" type="Enemy">
-                            <param id="0" name="Animation">&quot;Left&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="119054956882122" type="EnemyHead">
-                            <param id="0" name="Animation">&quot;Left&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="747846742167843">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="802938533176835" type="System">
-                            <param id="0" name="First value">Player.X</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Second value">Enemy.X+5</param>
-                        </condition>
-                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="385918377462676" type="Enemy">
-                            <param id="0" name="Object">Player</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="518640512413839" type="Enemy">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="885595380738726" type="Enemy">
-                            <param id="0" name="Animation">&quot;Right&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="418578899762075" type="EnemyHead">
-                            <param id="0" name="Animation">&quot;Right&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="670038654190540">
-                    <conditions>
-                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="908415402262633" type="Enemy" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="243652427816690" type="Enemy">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="955879286350972" type="EnemyHead">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="650151272990153">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="861542179022567" type="System">
+                                    <param id="0" name="First value">Player.X</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Second value">Enemy.X-5</param>
+                                </condition>
+                                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="780595572072206" type="Enemy">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="419229941541098" type="Enemy">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="749240002396321" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Left&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="119054956882122" type="EnemyHead">
+                                    <param id="0" name="Animation">&quot;Left&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="747846742167843">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="802938533176835" type="System">
+                                    <param id="0" name="First value">Player.X</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Second value">Enemy.X+5</param>
+                                </condition>
+                                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="385918377462676" type="Enemy">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="518640512413839" type="Enemy">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="885595380738726" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="418578899762075" type="EnemyHead">
+                                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="670038654190540">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="908415402262633" type="Enemy" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="243652427816690" type="Enemy">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="955879286350972" type="EnemyHead">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="830964072847031">
                     <conditions>
@@ -201,6 +211,21 @@
                         <action id="-9" name="Destroy" sid="929586579999496" type="BulletSMG" />
                     </actions>
                 </event-block>
+                <event-block sid="986851682717914">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="403605979240905" type="System">
+                            <param id="0" name="Interval (seconds)">2.5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="697314499247600" type="System">
+                            <param id="0" name="Object to create">Enemy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">1920</param>
+                            <param id="3" name="Y">718</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="350505931346113" title="Pistol">
@@ -276,37 +301,11 @@
                             <param id="1" name="Layer">&quot;Game&quot;</param>
                             <param id="2" name="Image point">1</param>
                         </action>
-                        <action id="-18" name="Rotate clockwise" sid="904575897475435" type="Bullet">
-                            <param id="0" name="Degrees">random(-2, 2)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="356068540349563">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="131183378129424" type="Keyboard">
-                            <param id="0" name="Key">32 (Space)</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="471938068216566" type="Player">
-                            <param id="0" name="Object">Pistol</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="285856740839123" type="PlayerShotgun" />
-                        <action id="-9" name="Destroy" sid="355967870236100" type="PlayerSMG" />
-                        <action id="0" name="Spawn another object" sid="620683150537426" type="Player">
-                            <param id="0" name="Object">PlayerPistol</param>
-                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="528797441305402" type="PlayerPistol">
-                            <param id="0" name="Object">Player</param>
-                            <param id="1" name="Image point (optional)">1</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="417535142422812" title="Shotgun">
+        <event-group description="" inactive="1" sid="417535142422812" title="Shotgun">
             <sub-events>
                 <event-block sid="879347743292711">
                     <conditions>
@@ -399,32 +398,9 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="690861490396195">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="757269133375834" type="Keyboard">
-                            <param id="0" name="Key">32 (Space)</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="132524277655854" type="Player">
-                            <param id="0" name="Object">Shotgun</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="130524311251118" type="PlayerPistol" />
-                        <action id="-9" name="Destroy" sid="248718311268926" type="PlayerSMG" />
-                        <action id="0" name="Spawn another object" sid="581285879437554" type="Player">
-                            <param id="0" name="Object">PlayerShotgun</param>
-                            <param id="1" name="Layer">&quot;Game&quot;</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="618001605357749" type="PlayerShotgun">
-                            <param id="0" name="Object">Player</param>
-                            <param id="1" name="Image point (optional)">1</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="203535237857814" title="SMG">
+        <event-group description="" inactive="1" sid="203535237857814" title="SMG">
             <sub-events>
                 <event-block sid="186228721970128">
                     <conditions>
@@ -502,6 +478,45 @@
                         </action>
                     </actions>
                 </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="551361077243042" title="System">
+            <sub-events>
+                <event-block sid="690861490396195">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="757269133375834" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="132524277655854" type="Player">
+                            <param id="0" name="Object">Shotgun</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="130524311251118" type="PlayerPistol" />
+                        <action id="-9" name="Destroy" sid="248718311268926" type="PlayerSMG" />
+                        <action id="0" name="Spawn another object" sid="581285879437554" type="Player">
+                            <param id="0" name="Object">PlayerShotgun</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="618001605357749" type="PlayerShotgun">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="907354930030129" type="System">
+                            <param id="0" name="Group name">&quot;SMG&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="966860744366643" type="System">
+                            <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="598490245045084" type="System">
+                            <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="480512661415273">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="958990525417581" type="Keyboard">
@@ -522,6 +537,53 @@
                         <action id="-4" name="Set position to another object" sid="822036955572617" type="PlayerSMG">
                             <param id="0" name="Object">Player</param>
                             <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="148094920245133" type="System">
+                            <param id="0" name="Group name">&quot;SMG&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="631453802082405" type="System">
+                            <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="318660647010848" type="System">
+                            <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="356068540349563">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="131183378129424" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="471938068216566" type="Player">
+                            <param id="0" name="Object">Pistol</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="285856740839123" type="PlayerShotgun" />
+                        <action id="-9" name="Destroy" sid="355967870236100" type="PlayerSMG" />
+                        <action id="0" name="Spawn another object" sid="620683150537426" type="Player">
+                            <param id="0" name="Object">PlayerPistol</param>
+                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="528797441305402" type="PlayerPistol">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="479676590043642" type="System">
+                            <param id="0" name="Group name">&quot;SMG&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="692126361367389" type="System">
+                            <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="902856786902562" type="System">
+                            <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                            <param id="1" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
