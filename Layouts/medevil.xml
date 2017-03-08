@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>medevil</name>
+    <name>Medevil</name>
     <sid>108371926363684</sid>
     <event-sheet>Event sheet 1</event-sheet>
     <size>
         <width>3840</width>
-        <height>2160</height>
+        <height>720</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -520,6 +520,93 @@
                         <depth>0</depth>
                         <hotspotX>0.478260875</hotspotX>
                         <hotspotY>0.993548393</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Bow" uid="62">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>285</x>
+                        <y>695</y>
+                        <z>0</z>
+                        <width>67.863357544</width>
+                        <height>98.496116638</height>
+                        <depth>0</depth>
+                        <hotspotX>0.513888896</hotspotX>
+                        <hotspotY>1.004784703</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PlayerBow" uid="63">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>128</x>
+                        <y>-119</y>
+                        <z>0</z>
+                        <width>70.863365173</width>
+                        <height>98.496116638</height>
+                        <depth>0</depth>
+                        <hotspotX>-0.442176878</hotspotX>
+                        <hotspotY>0.555023909</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arrow" uid="64">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>700</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>50</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>709</x>
+                        <y>-120</y>
+                        <z>0</z>
+                        <width>45.163528442</width>
+                        <height>2.486846924</height>
+                        <depth>0</depth>
+                        <hotspotX>-0.104999997</hotspotX>
+                        <hotspotY>0.485000014</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
