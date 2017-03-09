@@ -175,6 +175,92 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="BattleaxeAmmo" sid="202749856250755">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="681572580839173">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="127389129497251">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="545992214652714" speed="5">
+                        <frame duration="1" hotspotX="0.489209" hotspotY="0.502024" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="Fly" pingpong="0" repeatcount="1" repeatto="0" sid="880909305821688" speed="16">
+                        <frame duration="1" hotspotX="0.489209" hotspotY="0.502024" />
+                        <frame duration="1" hotspotX="0.497976" hotspotY="0.489209">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.510791" hotspotY="0.497976">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502024" hotspotY="0.510791">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SwordAmmo" sid="265874896827542">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="671942219910604">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="248745711957586">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878850994981760" speed="5">
+                        <frame duration="1" hotspotX="0.513158" hotspotY="1.00493" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="Fly" pingpong="0" repeatcount="1" repeatto="0" sid="928104936111547" speed="16">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.487685" />
+                        <frame duration="1" hotspotX="0.512315" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.512315">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.487685" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Weapons">
             <object-type name="Axe" sid="109656068469083">
@@ -237,6 +323,22 @@
                                 <point x="1" y="1" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Battleaxe" sid="140145591544576">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818254013603957" speed="5">
+                        <frame duration="1" hotspotX="0.489209" hotspotY="0.502024" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sword" sid="517892509800889">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="664901120139419" speed="5">
+                        <frame duration="1" hotspotX="0.513158" hotspotY="1.00493" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -360,6 +462,26 @@
                                 <point x="0.745" y="0.745" />
                                 <point x="0.255" y="0.745" />
                             </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerBattleaxe" sid="512945035562050">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="558504779028458" speed="5">
+                        <frame duration="1" hotspotX="-0.402878" hotspotY="0.781377">
+                            <image-point name="BattleAxe" x="0.978417" y="0.37247" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerSword" sid="766946645897487">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718841850067195" speed="5">
+                        <frame duration="1" hotspotX="-0.618421" hotspotY="0.82266">
+                            <image-point name="Sword Location" x="0.986842" y="0.315271" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -543,11 +665,43 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="899725443416938">
+        <object-type name="tvbg" sid="899725443416938">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400389644410896" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Castle" sid="889005171638653">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507946034540742" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CastleWall" sid="782344647557150">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Bridge" sid="395203014114206">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="659187908030288">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385193737543917" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.972973">
+                        <collision-poly>
+                            <point x="0.252976" y="0.0608108" />
+                            <point x="0.714286" y="0.0540541" />
+                            <point x="1" y="1" />
+                            <point x="0" y="0.959459" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -565,8 +719,8 @@
         <layout>Modern.xml</layout>
         <layout>Time Vortex 3.xml</layout>
         <layout>Future.xml</layout>
-        <layout>End.xml</layout>
         <layout>Victory.xml</layout>
+        <layout>End.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
