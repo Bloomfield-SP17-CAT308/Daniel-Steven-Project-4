@@ -550,6 +550,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -573,11 +576,6 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
                         <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
@@ -625,11 +623,6 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
                         <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
@@ -983,8 +976,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1263</x>
-                        <y>742</y>
+                        <x>576</x>
+                        <y>859</y>
                         <z>0</z>
                         <width>305</width>
                         <height>111</height>
@@ -1010,14 +1003,36 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>431</x>
-                        <y>802</y>
+                        <x>147</x>
+                        <y>843</y>
                         <z>0</z>
                         <width>428</width>
                         <height>129</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="portal" uid="205">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>363</x>
+                        <y>1017</y>
+                        <z>0</z>
+                        <width>70</width>
+                        <height>133</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

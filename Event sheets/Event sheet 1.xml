@@ -47,6 +47,30 @@
         <event-group description="" sid="583845318456378" title="Enemy">
             <sub-events>
                 <event-group description="" sid="437414978946492" title="Future" />
+                <event-block sid="781797837622493">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="580459412528564" type="System">
+                            <param id="0" name="Interval (seconds)">1.5</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="495733950906413" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Future&quot;</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="479828724654667" type="Player">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">5350</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="708743934182206" type="System">
+                            <param id="0" name="Object to create">Enemy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">5460</param>
+                            <param id="3" name="Y">699</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-group description="" sid="334684208805028" title="Primal">
                     <sub-events>
                         <event-block sid="897412660967896">
@@ -103,7 +127,34 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="426901783212313" title="Soldier" />
+                <event-group description="" sid="426901783212313" title="Soldier">
+                    <sub-events>
+                        <event-block sid="539157611838968">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="970568343999527" type="System">
+                                    <param id="0" name="Interval (seconds)">1.5</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="343865110250801" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Modern&quot;</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="112802586951759" type="Player">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">5350</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="673465886253026" type="System">
+                                    <param id="0" name="Object to create">Enemy</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">5460</param>
+                                    <param id="3" name="Y">699</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="952316316323628" title="Zombie">
                     <sub-events>
                         <event-block sid="949996996308101">
@@ -320,7 +371,277 @@
         </event-group>
         <event-group description="" sid="266055072155261" title="Weapons">
             <sub-events>
-                <event-group description="" sid="327906478591952" title="Future Weapons" />
+                <event-group description="" sid="327906478591952" title="Future Weapons">
+                    <sub-events>
+                        <event-group description="" inactive="1" sid="760339361360895" title="Lazer Rifle">
+                            <sub-events>
+                                <event-block sid="380759873791526">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="720056956119271" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set position to another object" sid="678218966762042" type="PlayerLazerRifle">
+                                            <param id="0" name="Object">Player</param>
+                                            <param id="1" name="Image point (optional)">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="999235666464153">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="280756251073943" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-22" name="Set angle toward position" sid="195941435786633" type="PlayerLazerRifle">
+                                            <param id="0" name="X">Mouse.X(&quot;Game&quot;)</param>
+                                            <param id="1" name="Y">Mouse.Y(&quot;Game&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="366612642988123">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="328329602457263" type="System">
+                                            <param id="0" name="First value">Mouse.X</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Second value">Player.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Set flipped" sid="885769057969389" type="PlayerLazerRifle">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="834106179127355" type="Player">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="748432527512290">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="641668663844225" type="System">
+                                            <param id="0" name="First value">Mouse.X</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">Player.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Set flipped" sid="836293700520868" type="PlayerLazerRifle">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="612415090643425" type="Player">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="421301343404728">
+                                    <conditions>
+                                        <condition id="2" name="Mouse button is down" sid="992771528661563" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                        </condition>
+                                        <condition id="-6" name="Every X seconds" sid="173678754874961" type="System">
+                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="883333539404533" type="PlayerLazerRifle">
+                                            <param id="0" name="Object">Lazer</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="912062759106461" type="Lazer">
+                                            <param id="0" name="Degrees">random(-2, 2)</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="568507527682491" type="PlayerLazerRifle">
+                                            <param id="0" name="Object">MuzzleFlash</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="564843730007637" type="System">
+                                            <param id="0" name="Seconds">0.035</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="796527676001439" type="MuzzleFlash" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="932901771069917" title="Needler">
+                            <sub-events>
+                                <event-block sid="593131573272139">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="173358496527834" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set position to another object" sid="236627808304597" type="PlayerNeedler">
+                                            <param id="0" name="Object">Player</param>
+                                            <param id="1" name="Image point (optional)">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="394668725669422">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="707652668848726" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-22" name="Set angle toward position" sid="152232141753500" type="PlayerNeedler">
+                                            <param id="0" name="X">Mouse.X(&quot;Game&quot;)</param>
+                                            <param id="1" name="Y">Mouse.Y(&quot;Game&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="114424589324888">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="582720377733267" type="System">
+                                            <param id="0" name="First value">Mouse.X</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Second value">Player.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Set flipped" sid="660887955018626" type="PlayerNeedler">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="487413587192872" type="Player">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="854417806296693">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="487354610261271" type="System">
+                                            <param id="0" name="First value">Mouse.X</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">Player.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Set flipped" sid="469392408806468" type="PlayerNeedler">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="937212441935677" type="Player">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="187314165953040">
+                                    <conditions>
+                                        <condition id="2" name="Mouse button is down" sid="388258782226390" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                        </condition>
+                                        <condition id="-6" name="Every X seconds" sid="164983093210755" type="System">
+                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="878520256770283" type="PlayerNeedler">
+                                            <param id="0" name="Object">Sprite2</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="723779010057135" type="Sprite2">
+                                            <param id="0" name="Degrees">random(-2, 2)</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="358967320350126" type="PlayerNeedler">
+                                            <param id="0" name="Object">MuzzleFlash</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="162324269281352" type="System">
+                                            <param id="0" name="Seconds">0.035</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="897311092219299" type="MuzzleFlash" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" inactive="1" sid="288388627514226" title="Acidgun">
+                            <sub-events>
+                                <event-block sid="937622544923635">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="575914613066996" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set position to another object" sid="907875170666530" type="PlayerAcidGun">
+                                            <param id="0" name="Object">Player</param>
+                                            <param id="1" name="Image point (optional)">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="252849298216276">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="337425743094527" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-22" name="Set angle toward position" sid="775020749422607" type="PlayerAcidGun">
+                                            <param id="0" name="X">Mouse.X(&quot;Game&quot;)</param>
+                                            <param id="1" name="Y">Mouse.Y(&quot;Game&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="227563454319888">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="139935177992901" type="System">
+                                            <param id="0" name="First value">Mouse.X</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Second value">Player.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Set flipped" sid="275449344228917" type="PlayerAcidGun">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="912837687366757" type="Player">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="570871065179322">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="355568832130940" type="System">
+                                            <param id="0" name="First value">Mouse.X</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Second value">Player.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Set flipped" sid="344906042685155" type="PlayerAcidGun">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="659341124213441" type="Player">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="233175803636423">
+                                    <conditions>
+                                        <condition id="2" name="Mouse button is down" sid="195397622190916" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                        </condition>
+                                        <condition id="-6" name="Every X seconds" sid="752536050037483" type="System">
+                                            <param id="0" name="Interval (seconds)">0.2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="193877133851967" type="PlayerAcidGun">
+                                            <param id="0" name="Object">Sprite</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-18" name="Rotate clockwise" sid="836658884747462" type="Sprite">
+                                            <param id="0" name="Degrees">random(-2, 2)</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="343470178353949" type="PlayerAcidGun">
+                                            <param id="0" name="Object">MuzzleFlash</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="838832005561700" type="System">
+                                            <param id="0" name="Seconds">0.035</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="750791297650109" type="MuzzleFlash" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="803913644024660" title="Modern Weapons">
                     <sub-events>
                         <event-group description="" inactive="1" sid="203535237857814" title="SMG">
@@ -399,6 +720,15 @@
                                         <action id="-18" name="Rotate clockwise" sid="716153415760693" type="BulletSMG">
                                             <param id="0" name="Degrees">random(-2, 2)</param>
                                         </action>
+                                        <action id="0" name="Spawn another object" sid="715627955231475" type="PlayerSMG">
+                                            <param id="0" name="Object">MuzzleFlash</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="929672447597892" type="System">
+                                            <param id="0" name="Seconds">0.035</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="983737793681084" type="MuzzleFlash" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -476,6 +806,15 @@
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">1</param>
                                         </action>
+                                        <action id="0" name="Spawn another object" sid="230487090085498" type="PlayerPistol">
+                                            <param id="0" name="Object">MuzzleFlash</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="734981136231630" type="System">
+                                            <param id="0" name="Seconds">0.035</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="547162997557230" type="MuzzleFlash" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -571,6 +910,15 @@
                                         <action id="-18" name="Rotate clockwise" sid="194764675550244" type="Bullet">
                                             <param id="0" name="Degrees">random(-6, 6)</param>
                                         </action>
+                                        <action id="0" name="Spawn another object" sid="534277877932499" type="PlayerShotgun">
+                                            <param id="0" name="Object">MuzzleFlash</param>
+                                            <param id="1" name="Layer">&quot;Game&quot;</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="778252962011605" type="System">
+                                            <param id="0" name="Seconds">0.035</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="805478407410331" type="MuzzleFlash" />
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -1333,6 +1681,108 @@
                                 <action id="-9" name="Destroy" sid="106272971539848" type="SwordAmmo" />
                             </actions>
                         </event-block>
+                        <event-block any="1" sid="360118560115741">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="875554741009368" type="Sprite">
+                                    <param id="0" name="Object">Enemy</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="590049145750578" type="Sprite">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="248318496526902" type="Enemy">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">40</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="697840746411420" type="Sprite" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="487572554244801">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="961572014541930" type="Sprite">
+                                    <param id="0" name="Object">EnemyHead</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="572875356173789" type="Sprite">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="741593904037311" type="EnemyHead">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="444404533517375" type="Sprite" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="639269378529316">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="205174161099205" type="Lazer">
+                                    <param id="0" name="Object">Enemy</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="589109510121986" type="Lazer">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="384512918960339" type="Enemy">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">70</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="213412025969742" type="Lazer" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="981931105204407">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="626087637102888" type="Lazer">
+                                    <param id="0" name="Object">EnemyHead</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="133768037747646" type="Lazer">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="591258259672047" type="EnemyHead">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="577593301326416" type="Lazer" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="615386308603766">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="560292460913933" type="Sprite2">
+                                    <param id="0" name="Object">Enemy</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="869069544325952" type="Sprite2">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="191667558448746" type="Enemy">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">30</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="391025560142813" type="Sprite2" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="456831579306217">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="321624257288663" type="Sprite2">
+                                    <param id="0" name="Object">EnemyHead</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="610226454949130" type="Sprite2">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="634149745498465" type="EnemyHead">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="815505269539519" type="Sprite2" />
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
@@ -1589,6 +2039,38 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="591092806857671">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="374463551055236" type="System" />
+                                <condition id="-8" name="Compare two values" sid="159676683934806" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Modern&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="202593671797462" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="183225062154750">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="193910137612649" type="System" />
+                                <condition id="-8" name="Compare two values" sid="130968822426905" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Future&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="973331175404626" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="684278617749599">
                             <conditions>
                                 <condition id="-2" name="On start of layout" sid="328742975137477" type="System" />
@@ -1828,7 +2310,130 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="855400152613926" title="Future System" />
+                <event-group description="" sid="855400152613926" title="Future System">
+                    <sub-events>
+                        <event-block sid="686391085591968">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="292028459546283" type="Keyboard">
+                                    <param id="0" name="Key">32 (Space)</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="541999104806474" type="Player">
+                                    <param id="0" name="Object">AcidGun</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="127999615285808" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Future&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="420477086399799" type="PlayerLazerRifle" />
+                                <action id="-9" name="Destroy" sid="940568614069875" type="PlayerNeedler" />
+                                <action id="0" name="Spawn another object" sid="180971325141277" type="Player">
+                                    <param id="0" name="Object">PlayerAcidGun</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="518209826467796" type="PlayerAcidGun">
+                                    <param id="0" name="Object">Player</param>
+                                    <param id="1" name="Image point (optional)">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="602348505240001" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="253719012044747" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="104181444284803" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="114383489140229">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="643605920964325" type="Keyboard">
+                                    <param id="0" name="Key">32 (Space)</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="521698072832268" type="Player">
+                                    <param id="0" name="Object">LazerRifle</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="812685382698167" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Future&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="105663530725876" type="PlayerNeedler" />
+                                <action id="-9" name="Destroy" sid="255804407332099" type="PlayerAcidGun" />
+                                <action id="0" name="Spawn another object" sid="246798520769353" type="Player">
+                                    <param id="0" name="Object">PlayerLazerRifle</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="604478757783221" type="PlayerLazerRifle">
+                                    <param id="0" name="Object">Player</param>
+                                    <param id="1" name="Image point (optional)">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="796723646098521" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="393194461357810" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="986582254127001" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="855099238499081">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="684657872836137" type="Keyboard">
+                                    <param id="0" name="Key">32 (Space)</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="655123106041784" type="Player">
+                                    <param id="0" name="Object">Needler</param>
+                                </condition>
+                                <condition id="-8" name="Compare two values" sid="233198707235440" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Future&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="915804160031837" type="PlayerLazerRifle" />
+                                <action id="-9" name="Destroy" sid="196193666741937" type="PlayerAcidGun" />
+                                <action id="0" name="Spawn another object" sid="780204170135796" type="Player">
+                                    <param id="0" name="Object">PlayerNeedler</param>
+                                    <param id="1" name="Layer">&quot;Game&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-4" name="Set position to another object" sid="547372823977618" type="PlayerNeedler">
+                                    <param id="0" name="Object">Player</param>
+                                    <param id="1" name="Image point (optional)">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="721183464616409" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="598887804936589" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="925774330101653" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="676826326935600" title="Medevil System">
                     <sub-events>
                         <event-block sid="232773273800334">

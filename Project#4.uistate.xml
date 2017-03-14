@@ -16,13 +16,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="3">Zombie</layout>
         <layout order="4">Primal</layout>
         <layout order="5">Time Vortex</layout>
-        <layout active="1" order="6">Medevil</layout>
+        <layout order="6">Medevil</layout>
         <layout order="7">Time Vortex 2</layout>
         <layout order="8">Modern</layout>
         <layout order="9">Time Vortex 3</layout>
-        <layout order="10">Future</layout>
-        <layout order="12">End</layout>
+        <layout active="1" order="10">Future</layout>
         <layout order="11">Victory</layout>
+        <layout order="12">End</layout>
         <event-sheet order="13">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
@@ -37,7 +37,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Projectiles/" />
         <folder expanded="0" path="object-folder/Weapons/" />
         <folder expanded="0" path="object-folder/Player Weapons/" />
-        <folder expanded="0" path="object-folder/Enemys/" />
+        <folder expanded="1" path="object-folder/Enemys/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -61,6 +61,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Spear/" />
         <folder expanded="1" path="animation-folder/Battleaxe/" />
         <folder expanded="1" path="animation-folder/Sword/" />
+        <folder expanded="1" path="animation-folder/AcidGun/" />
+        <folder expanded="1" path="animation-folder/LazerRifle/" />
+        <folder expanded="1" path="animation-folder/Needler/" />
         <folder expanded="1" path="animation-folder/PlayerAxe/" />
         <folder expanded="1" path="animation-folder/PlayerBow/" />
         <folder expanded="1" path="animation-folder/PlayerPistol/" />
@@ -70,6 +73,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PlayerStone/" />
         <folder expanded="1" path="animation-folder/PlayerBattleaxe/" />
         <folder expanded="1" path="animation-folder/PlayerSword/" />
+        <folder expanded="1" path="animation-folder/PlayerAcidGun/" />
+        <folder expanded="1" path="animation-folder/PlayerNeedler/" />
+        <folder expanded="1" path="animation-folder/PlayerLazerRifle/" />
         <folder expanded="1" path="animation-folder/Enemy/" />
         <folder expanded="1" path="animation-folder/EnemyHead/" />
         <folder expanded="1" path="animation-folder/Player/" />
@@ -79,5 +85,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/tvbg/" />
         <folder expanded="1" path="animation-folder/Castle/" />
         <folder expanded="1" path="animation-folder/Bridge/" />
+        <folder expanded="1" path="animation-folder/Tank/" />
+        <folder expanded="1" path="animation-folder/Tank2/" />
+        <folder expanded="1" path="animation-folder/MuzzleFlash/" />
+        <folder expanded="1" path="animation-folder/Lazer/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
     </folders-expanded>
 </c2uistate>

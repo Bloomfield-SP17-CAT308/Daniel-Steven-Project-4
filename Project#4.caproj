@@ -281,6 +281,11 @@
             </object-type>
             <object-type name="Pistol" sid="424827908693591">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="753581943620944">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="855698879779040" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.99" />
@@ -289,6 +294,11 @@
             </object-type>
             <object-type name="Shotgun" sid="451174038030194">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="522981634332479">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785581635030885" speed="5">
                         <frame duration="1" hotspotX="0.502075" hotspotY="1.01389" />
@@ -297,6 +307,11 @@
             </object-type>
             <object-type name="SMG" sid="299057825074066">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="275060092181075">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463526905081328" speed="5">
                         <frame duration="1" hotspotX="0.491525" hotspotY="1.01754" />
@@ -342,6 +357,30 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="AcidGun" sid="820106377898500">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143495217930636" speed="5">
+                        <frame duration="1" hotspotX="0.474359" hotspotY="1.01408" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="LazerRifle" sid="324034380422890">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="268899605004636" speed="5">
+                        <frame duration="1" hotspotX="0.506276" hotspotY="0.603774" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Needler" sid="892003215402111">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="383121776711724" speed="5">
+                        <frame duration="1" hotspotX="0.460177" hotspotY="1.00581" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Player Weapons">
             <object-type name="PlayerAxe" sid="316351070886133">
@@ -362,9 +401,6 @@
             <object-type name="PlayerBow" sid="596823699492030">
                 <plugin id="Sprite" />
                 <behaviors>
-                    <behavior-type name="BoundToLayout" sid="182285816850257">
-                        <behavior id="bound" />
-                    </behavior-type>
                     <behavior-type name="DestroyOutsideLayout" sid="778531417394940">
                         <behavior id="destroy" />
                     </behavior-type>
@@ -401,9 +437,6 @@
             <object-type name="PlayerShotgun" sid="987549589444186">
                 <plugin id="Sprite" />
                 <behaviors>
-                    <behavior-type name="BoundToLayout" sid="605894904299758">
-                        <behavior id="bound" />
-                    </behavior-type>
                     <behavior-type name="DestroyOutsideLayout" sid="393708858709433">
                         <behavior id="destroy" />
                     </behavior-type>
@@ -422,9 +455,6 @@
                     <behavior-type name="DestroyOutsideLayout" sid="433368414674043">
                         <behavior id="destroy" />
                     </behavior-type>
-                    <behavior-type name="BoundToLayout" sid="693354936230267">
-                        <behavior id="bound" />
-                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156802932389913" speed="5">
@@ -436,6 +466,11 @@
             </object-type>
             <object-type name="PlayerSpear" sid="816752879660499">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="775907937191126">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="514485208613689" speed="5">
                         <frame duration="1" hotspotX="0.101322" hotspotY="1.39706">
@@ -468,6 +503,11 @@
             </object-type>
             <object-type name="PlayerBattleaxe" sid="512945035562050">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="916811884912254">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="558504779028458" speed="5">
                         <frame duration="1" hotspotX="-0.402878" hotspotY="0.781377">
@@ -482,6 +522,36 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718841850067195" speed="5">
                         <frame duration="1" hotspotX="-0.618421" hotspotY="0.82266">
                             <image-point name="Sword Location" x="0.986842" y="0.315271" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerAcidGun" sid="605309205778988">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="516168820326710" speed="5">
+                        <frame duration="1" hotspotX="-0.641026" hotspotY="0.493151">
+                            <image-point name="Imagepoint 1" x="0.910256" y="0.328767" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerNeedler" sid="477715025681891">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="620208856010442" speed="5">
+                        <frame duration="1" hotspotX="-0.0530973" hotspotY="0.511628">
+                            <image-point name="Imagepoint 1" x="0.955752" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerLazerRifle" sid="512029270567412">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117571381520147" speed="5">
+                        <frame duration="1" hotspotX="0.200837" hotspotY="0.377358">
+                            <image-point name="Imagepoint 1" x="0.966527" y="0.283019" />
                         </frame>
                     </animation>
                 </animation-folder>
@@ -702,6 +772,105 @@
                             <point x="0" y="0.959459" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tank" sid="932175827276462">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="347065009536474">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="241256662821140" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.2">
+                        <collision-poly>
+                            <point x="1" y="0.91129" />
+                            <point x="0" y="0.91129" />
+                            <point x="0.181282" y="0.602366" />
+                            <point x="0.350754" y="0.349086" />
+                            <point x="0.648729" y="0.355135" />
+                            <point x="0.820023" y="0.580968" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tank2" sid="658211910280315">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="283755422013304">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741303373812892" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.2">
+                        <collision-poly>
+                            <point x="0.179977" y="0.580968" />
+                            <point x="0.351271" y="0.355135" />
+                            <point x="0.649246" y="0.349086" />
+                            <point x="0.818718" y="0.602366" />
+                            <point x="1" y="0.91129" />
+                            <point x="0" y="0.91129" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MuzzleFlash" sid="488797996246003">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="425654850140590">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848105576808617" speed="5">
+                    <frame duration="1" hotspotX="0.414634" hotspotY="0.509615" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Lazer" sid="495008905966199">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="471551650683009">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="142179842921460">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="784379956540765" speed="5">
+                    <frame duration="1" hotspotX="0.593583" hotspotY="1.1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="331998386506502">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="817039269509927">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="602384704833631" speed="5">
+                    <frame duration="1" hotspotX="-0.0792079" hotspotY="0.62963" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="299666738752666">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="257320708532560">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517339043349832" speed="5">
+                    <frame duration="1" hotspotX="0.348066" hotspotY="0.795455" />
                 </animation>
             </animation-folder>
         </object-type>
