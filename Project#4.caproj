@@ -538,6 +538,11 @@
             </object-type>
             <object-type name="PlayerNeedler" sid="477715025681891">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="235927911058066">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="620208856010442" speed="5">
                         <frame duration="1" hotspotX="-0.0530973" hotspotY="0.511628">
@@ -548,6 +553,11 @@
             </object-type>
             <object-type name="PlayerLazerRifle" sid="512029270567412">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DestroyOutsideLayout" sid="590983805155384">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117571381520147" speed="5">
                         <frame duration="1" hotspotX="0.200837" hotspotY="0.377358">
@@ -854,6 +864,9 @@
                 <behavior-type name="Bullet" sid="817039269509927">
                     <behavior id="Bullet" />
                 </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="427045249878245">
+                    <behavior id="destroy" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="602384704833631" speed="5">
@@ -866,6 +879,9 @@
             <behaviors>
                 <behavior-type name="Bullet" sid="257320708532560">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="498761034504249">
+                    <behavior id="destroy" />
                 </behavior-type>
             </behaviors>
             <animation-folder>

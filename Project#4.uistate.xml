@@ -20,10 +20,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="7">Time Vortex 2</layout>
         <layout order="8">Modern</layout>
         <layout order="9">Time Vortex 3</layout>
-        <layout active="1" order="10">Future</layout>
+        <layout order="10">Future</layout>
         <layout order="11">Victory</layout>
         <layout order="12">End</layout>
-        <event-sheet order="13">Event sheet 1</event-sheet>
+        <event-sheet active="1" order="13">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
