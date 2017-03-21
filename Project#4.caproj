@@ -911,6 +911,103 @@
         <object-type global="1" name="Text4" sid="825612312603629">
             <plugin id="Text" />
         </object-type>
+        <object-type name="DesertFloor" sid="678037885076851">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="703572440153575">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="289248028797109" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.394737" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DesertHouse" sid="108255078401855">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487168895608317" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.472727" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DesertHill1" sid="665698262823998">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="337964040294945" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.015625" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="364820298543717">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="716503837229919">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="910347039587472" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.202247" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="230627618885964">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="540792176680809">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="798489873240566" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.422764" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="907065964941961">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687467761291676" speed="5">
+                    <frame duration="1" hotspotX="0.481707" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="864209484715972">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161981221958257" speed="5">
+                    <frame duration="1" hotspotX="0.482051" hotspotY="-0.008" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="199810477826889">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="835780560188837" speed="5">
+                    <frame duration="1" hotspotX="0.553571" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Platform2" sid="167581135320385">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="747753829671055">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Platform3" sid="868247100861737">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="541202940180758">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

@@ -1856,6 +1856,226 @@
                                 <action id="-9" name="Destroy" sid="692656066554904" type="needle" />
                             </actions>
                         </event-block>
+                        <event-block any="1" sid="436478477037048">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="633954661946726" type="Bullet">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="746404846978982" type="Bullet" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="425677061152007">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="668494676705472" type="BulletSMG">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="798666156494312" type="BulletSMG" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="660806414818822">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="146600868289887" type="SpearAmmo">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="931183666836795" type="SpearAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="561330579908239">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="208765859423827" type="Arrow">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="106074957900242" type="Arrow" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="356920424718799">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="404040100648030" type="StoneAmmo">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="533833150589320" type="StoneAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="956296068426001">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="799605865722694" type="AxeAmmo">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="110558040357947" type="AxeAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="184440327565645">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="218838042622543" type="BattleaxeAmmo">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="751012360179303" type="BattleaxeAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="452283305762096">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="922142870133047" type="SwordAmmo">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="167896450482320" type="SwordAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="740985177598969">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="331141655871865" type="AcidGlob">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="459010144866748" type="AcidGlob" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="531762629918605">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="575931212786310" type="Lazer">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="682515476093752" type="Lazer" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="799519171241171">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="432689607632259" type="needle">
+                                    <param id="0" name="Object">Platform2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="280389135899496" type="needle" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="822483842573519">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="252948670966377" type="Bullet">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="759584315284307" type="Bullet" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="822660203707508">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="135997658036536" type="BulletSMG">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="186176175783684" type="BulletSMG" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="292007415004879">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="854471418084598" type="SpearAmmo">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="549714416787853" type="SpearAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="245026827720127">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="534038290722148" type="Arrow">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="679853009414579" type="Arrow" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="609490224163770">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="731158007438610" type="StoneAmmo">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="971496424729000" type="StoneAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="180181813193604">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="165653098183766" type="AxeAmmo">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="572213284443412" type="AxeAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="920397920314983">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="886230375054028" type="BattleaxeAmmo">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="170262787961527" type="BattleaxeAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="136326163112313">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="337542595675958" type="SwordAmmo">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="854868361950220" type="SwordAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="604203281981076">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="961537905619328" type="AcidGlob">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="753470420740688" type="AcidGlob" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="396733131866464">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="582095262204040" type="Lazer">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="978621305260165" type="Lazer" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="802883091447108">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="192590434064018" type="needle">
+                                    <param id="0" name="Object">Platform3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="418160130807304" type="needle" />
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
