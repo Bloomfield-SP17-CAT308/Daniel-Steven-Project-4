@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="progressbar" version="1">Progress bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -258,6 +259,54 @@
                                 <point x="1" y="1" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AcidGlob" sid="331998386506502">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="817039269509927">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="427045249878245">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="602384704833631" speed="5">
+                        <frame duration="1" hotspotX="-0.0792079" hotspotY="0.62963" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Lazer" sid="495008905966199">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="471551650683009">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="142179842921460">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="784379956540765" speed="5">
+                        <frame duration="1" hotspotX="0.593583" hotspotY="1.1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="needle" sid="299666738752666">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="257320708532560">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="498761034504249">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517339043349832" speed="5">
+                        <frame duration="1" hotspotX="0.348066" hotspotY="0.795455" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -686,7 +735,7 @@
         </object-type>
         <object-type name="Background" sid="952973813368523">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="C:\Users\Daniel\Desktop\Git Hub\Repos\Daniel-Steven-Project-4\Assests\BG.png" />
         </object-type>
         <object-type name="Menu" sid="741687066191419">
             <plugin id="Text" />
@@ -842,53 +891,25 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Lazer" sid="495008905966199">
+        <object-type name="Sprite3" sid="933787287372622">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="471551650683009">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="142179842921460">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="784379956540765" speed="5">
-                    <frame duration="1" hotspotX="0.593583" hotspotY="1.1" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304965097241154" speed="5">
+                    <frame duration="1" hotspotX="0.502857" hotspotY="0.501916" original-source="C:\Users\Daniel\Desktop\Artooside_CVD.jpg" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="331998386506502">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="817039269509927">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="427045249878245">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="602384704833631" speed="5">
-                    <frame duration="1" hotspotX="-0.0792079" hotspotY="0.62963" />
-                </animation>
-            </animation-folder>
+        <object-type name="Text2" sid="905441328011260">
+            <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite2" sid="299666738752666">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="257320708532560">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="498761034504249">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517339043349832" speed="5">
-                    <frame duration="1" hotspotX="0.348066" hotspotY="0.795455" />
-                </animation>
-            </animation-folder>
+        <object-type name="Text3" sid="526295140996704">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="ProgressBar" sid="369828922202758">
+            <plugin id="progressbar" />
+        </object-type>
+        <object-type global="1" name="Text4" sid="825612312603629">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

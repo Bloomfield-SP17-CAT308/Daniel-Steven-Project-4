@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Score" sid="285670316933659" static="0" type="number">0</variable>
         <variable constant="0" name="Health" sid="390249526400511" static="0" type="number">100</variable>
         <event-group description="" sid="204640263002520" title="Player">
             <sub-events>
@@ -39,6 +40,34 @@
                     <actions>
                         <action behavior="Platform" id="7" name="Simulate control" sid="393080041482365" type="Player">
                             <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="207192303000301">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="620908741264873" type="Player">
+                            <param id="0" name="Instance variable">KnockBack</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="676382404799108" type="Player">
+                            <param id="0" name="X">Self.X+(Self.KnockBack*5)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="353135009294448">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="632127281425913" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="608626724403196" type="Player">
+                            <param id="0" name="Instance variable">KnockBack</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Platform" id="4" name="Set jump strength" sid="423626132975759" type="Player">
+                            <param id="0" name="Jump strength">600</param>
                         </action>
                     </actions>
                 </event-block>
@@ -365,34 +394,6 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="849277535320493">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="996517311333352" type="Player">
-                                    <param id="0" name="Instance variable">KnockBack</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-1" name="Set X" sid="371436126992021" type="Player">
-                                    <param id="0" name="X">Self.X+(Self.KnockBack*5)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="316802050138092">
-                            <conditions>
-                                <condition behavior="Platform" id="9" name="On landed" sid="553652164578857" type="Player" />
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="855741057826639" type="Player">
-                                    <param id="0" name="Instance variable">KnockBack</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action behavior="Platform" id="4" name="Set jump strength" sid="281189216970381" type="Player">
-                                    <param id="0" name="Jump strength">600</param>
-                                </action>
-                            </actions>
-                        </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
@@ -559,11 +560,11 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="878520256770283" type="PlayerNeedler">
-                                            <param id="0" name="Object">Sprite2</param>
+                                            <param id="0" name="Object">needle</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">1</param>
                                         </action>
-                                        <action id="-18" name="Rotate clockwise" sid="723779010057135" type="Sprite2">
+                                        <action id="-18" name="Rotate clockwise" sid="723779010057135" type="needle">
                                             <param id="0" name="Degrees">random(-2, 2)</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="358967320350126" type="PlayerNeedler">
@@ -648,11 +649,11 @@
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="193877133851967" type="PlayerAcidGun">
-                                            <param id="0" name="Object">Sprite</param>
+                                            <param id="0" name="Object">AcidGlob</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">1</param>
                                         </action>
-                                        <action id="-18" name="Rotate clockwise" sid="836658884747462" type="Sprite">
+                                        <action id="-18" name="Rotate clockwise" sid="836658884747462" type="AcidGlob">
                                             <param id="0" name="Degrees">random(-2, 2)</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="343470178353949" type="PlayerAcidGun">
@@ -911,7 +912,7 @@
                                             <param id="0" name="Mouse button">0</param>
                                         </condition>
                                         <condition id="-6" name="Every X seconds" sid="434114414519527" type="System">
-                                            <param id="0" name="Interval (seconds)">0.8</param>
+                                            <param id="0" name="Interval (seconds)">0.5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1442,9 +1443,6 @@
                                 <condition id="0" name="On collision with another object" sid="315182127198643" type="Bullet">
                                     <param id="0" name="Object">Enemy</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="668065618475356" type="Bullet">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="607732268332647" type="Enemy">
@@ -1458,9 +1456,6 @@
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="738038538570458" type="Bullet">
                                     <param id="0" name="Object">EnemyHead</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="364499727222253" type="Bullet">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1476,9 +1471,6 @@
                                 <condition id="0" name="On collision with another object" sid="269839390678984" type="BulletSMG">
                                     <param id="0" name="Object">Enemy</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="557627358892858" type="BulletSMG">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="891186317674661" type="Enemy">
@@ -1492,9 +1484,6 @@
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="447482885130393" type="BulletSMG">
                                     <param id="0" name="Object">EnemyHead</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="961934607021514" type="BulletSMG">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1510,9 +1499,6 @@
                                 <condition id="0" name="On collision with another object" sid="684830182941308" type="SpearAmmo">
                                     <param id="0" name="Object">Enemy</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="288536471685240" type="SpearAmmo">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="672520468465787" type="Enemy">
@@ -1526,9 +1512,6 @@
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="901885234451988" type="SpearAmmo">
                                     <param id="0" name="Object">EnemyHead</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="531507991980105" type="SpearAmmo">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1544,9 +1527,6 @@
                                 <condition id="0" name="On collision with another object" sid="146261724624264" type="Arrow">
                                     <param id="0" name="Object">Enemy</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="816996877335168" type="Arrow">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="572062364676984" type="Enemy">
@@ -1560,9 +1540,6 @@
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="881332098064030" type="Arrow">
                                     <param id="0" name="Object">EnemyHead</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="683567232218796" type="Arrow">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1578,9 +1555,6 @@
                                 <condition id="0" name="On collision with another object" sid="318038223424393" type="StoneAmmo">
                                     <param id="0" name="Object">Enemy</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="294554849707496" type="StoneAmmo">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="821982796401855" type="Enemy">
@@ -1594,9 +1568,6 @@
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="419241185098142" type="StoneAmmo">
                                     <param id="0" name="Object">EnemyHead</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="843346454308777" type="StoneAmmo">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1612,9 +1583,6 @@
                                 <condition id="0" name="On collision with another object" sid="990501123569679" type="AxeAmmo">
                                     <param id="0" name="Object">Enemy</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="362018761893599" type="AxeAmmo">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="145073300301258" type="Enemy">
@@ -1628,9 +1596,6 @@
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="991532965394121" type="AxeAmmo">
                                     <param id="0" name="Object">EnemyHead</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="104522719573279" type="AxeAmmo">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1646,9 +1611,6 @@
                                 <condition id="0" name="On collision with another object" sid="272981449681651" type="BattleaxeAmmo">
                                     <param id="0" name="Object">Enemy</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="239992506970595" type="BattleaxeAmmo">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="970344005404415" type="Enemy">
@@ -1662,9 +1624,6 @@
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="410221103321489" type="BattleaxeAmmo">
                                     <param id="0" name="Object">EnemyHead</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="357184906902739" type="BattleaxeAmmo">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1680,9 +1639,6 @@
                                 <condition id="0" name="On collision with another object" sid="642027327937951" type="SwordAmmo">
                                     <param id="0" name="Object">Enemy</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="656999346694514" type="SwordAmmo">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="680138119032105" type="Enemy">
@@ -1697,9 +1653,6 @@
                                 <condition id="0" name="On collision with another object" sid="116174273620316" type="SwordAmmo">
                                     <param id="0" name="Object">EnemyHead</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="193180084753882" type="SwordAmmo">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="577150964490853" type="EnemyHead">
@@ -1711,11 +1664,8 @@
                         </event-block>
                         <event-block any="1" sid="360118560115741">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="875554741009368" type="Sprite">
+                                <condition id="0" name="On collision with another object" sid="875554741009368" type="AcidGlob">
                                     <param id="0" name="Object">Enemy</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="590049145750578" type="Sprite">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1723,16 +1673,13 @@
                                     <param id="0" name="Instance variable">Health</param>
                                     <param id="1" name="Value">40</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="697840746411420" type="Sprite" />
+                                <action id="-9" name="Destroy" sid="697840746411420" type="AcidGlob" />
                             </actions>
                         </event-block>
                         <event-block any="1" sid="487572554244801">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="961572014541930" type="Sprite">
+                                <condition id="0" name="On collision with another object" sid="961572014541930" type="AcidGlob">
                                     <param id="0" name="Object">EnemyHead</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="572875356173789" type="Sprite">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1740,16 +1687,13 @@
                                     <param id="0" name="Instance variable">Health</param>
                                     <param id="1" name="Value">100</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="444404533517375" type="Sprite" />
+                                <action id="-9" name="Destroy" sid="444404533517375" type="AcidGlob" />
                             </actions>
                         </event-block>
                         <event-block any="1" sid="639269378529316">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="205174161099205" type="Lazer">
                                     <param id="0" name="Object">Enemy</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="589109510121986" type="Lazer">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1765,9 +1709,6 @@
                                 <condition id="0" name="On collision with another object" sid="626087637102888" type="Lazer">
                                     <param id="0" name="Object">EnemyHead</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="133768037747646" type="Lazer">
-                                    <param id="0" name="Object">Platform</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-12" name="Subtract from" sid="591258259672047" type="EnemyHead">
@@ -1779,11 +1720,8 @@
                         </event-block>
                         <event-block any="1" sid="615386308603766">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="560292460913933" type="Sprite2">
+                                <condition id="0" name="On collision with another object" sid="560292460913933" type="needle">
                                     <param id="0" name="Object">Enemy</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="869069544325952" type="Sprite2">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1791,16 +1729,13 @@
                                     <param id="0" name="Instance variable">Health</param>
                                     <param id="1" name="Value">30</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="391025560142813" type="Sprite2" />
+                                <action id="-9" name="Destroy" sid="391025560142813" type="needle" />
                             </actions>
                         </event-block>
                         <event-block any="1" sid="456831579306217">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="321624257288663" type="Sprite2">
+                                <condition id="0" name="On collision with another object" sid="321624257288663" type="needle">
                                     <param id="0" name="Object">EnemyHead</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="610226454949130" type="Sprite2">
-                                    <param id="0" name="Object">Platform</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1808,7 +1743,117 @@
                                     <param id="0" name="Instance variable">Health</param>
                                     <param id="1" name="Value">100</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="815505269539519" type="Sprite2" />
+                                <action id="-9" name="Destroy" sid="815505269539519" type="needle" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="372470133120168">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="625380478295763" type="Bullet">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="879928727532836" type="Bullet" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="682622877360540">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="624508639085118" type="BulletSMG">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="202004483533199" type="BulletSMG" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="759617178316896">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="174105727681330" type="SpearAmmo">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="157195437388164" type="SpearAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="304310781987514">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="195494113508095" type="Arrow">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="113393888621983" type="Arrow" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="632540904438550">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="348662502487865" type="StoneAmmo">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="667788582067696" type="StoneAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="526707491745834">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="112049626732767" type="AxeAmmo">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="960003864902197" type="AxeAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="247268919017773">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="676776696132661" type="BattleaxeAmmo">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="172265616781647" type="BattleaxeAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="231023724571730">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="173391438461529" type="SwordAmmo">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="433366742560767" type="SwordAmmo" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="342098995946263">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="443293428061937" type="AcidGlob">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="999919101516696" type="AcidGlob" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="255251958686247">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="509176093937622" type="Lazer">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="781912420132170" type="Lazer" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="820034373571315">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="417855322603732" type="needle">
+                                    <param id="0" name="Object">Platform</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="692656066554904" type="needle" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -1822,10 +1867,7 @@
                         <event-block sid="892238366060433">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="653584940781135" type="Keyboard">
-                                    <param id="0" name="Key">32 (Space)</param>
-                                </condition>
-                                <condition id="1" name="Is overlapping another object" sid="586162919506559" type="Player">
-                                    <param id="0" name="Object">Shotgun</param>
+                                    <param id="0" name="Key">51 (3)</param>
                                 </condition>
                                 <condition id="-8" name="Compare two values" sid="515309207837685" type="System">
                                     <param id="0" name="First value">LayoutName</param>
@@ -1862,10 +1904,7 @@
                         <event-block sid="214754160802362">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="851659190688117" type="Keyboard">
-                                    <param id="0" name="Key">32 (Space)</param>
-                                </condition>
-                                <condition id="1" name="Is overlapping another object" sid="481696278411408" type="Player">
-                                    <param id="0" name="Object">SMG</param>
+                                    <param id="0" name="Key">50 (2)</param>
                                 </condition>
                                 <condition id="-8" name="Compare two values" sid="342708915256496" type="System">
                                     <param id="0" name="First value">LayoutName</param>
@@ -1902,10 +1941,7 @@
                         <event-block sid="257270073136424">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="799056380661656" type="Keyboard">
-                                    <param id="0" name="Key">32 (Space)</param>
-                                </condition>
-                                <condition id="1" name="Is overlapping another object" sid="699693064414342" type="Player">
-                                    <param id="0" name="Object">Pistol</param>
+                                    <param id="0" name="Key">49 (1)</param>
                                 </condition>
                                 <condition id="-8" name="Compare two values" sid="462780586848221" type="System">
                                     <param id="0" name="First value">LayoutName</param>
@@ -1936,6 +1972,50 @@
                                 <action id="-12" name="Set group active" sid="126845704426616" type="System">
                                     <param id="0" name="Group name">&quot;Shotgun&quot;</param>
                                     <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="292789185677013">
+                            <conditions>
+                                <condition id="-19" name="On destroyed" sid="202018144476405" type="Enemy" />
+                                <condition id="-8" name="Compare two values" sid="287230427092904" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Zombie&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="128211086934682" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="854180785725582">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="714866519204442" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Zombie&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="642856578318166" type="Text3">
+                                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="953186711107059">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="443110351194033" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Zombie&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Set progress" sid="133802382426677" type="ProgressBar">
+                                    <param id="0" name="Value">Health</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2284,6 +2364,14 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-12" name="Set group active" sid="985431643682696" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="478269102942431" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action id="-2" name="Go to layout" sid="590175280530139" type="System">
                                     <param id="0" name="Layout">Primal</param>
                                 </action>
