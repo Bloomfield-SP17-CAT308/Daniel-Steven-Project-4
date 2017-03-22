@@ -443,6 +443,12 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="399965115732555" speed="5">
                         <frame duration="1" hotspotX="-0.734694" hotspotY="0.687117">
                             <image-point name="Axe Location" x="0.989796" y="0.496933" />
+                            <collision-poly>
+                                <point x="0.0306122" y="0.0981595" />
+                                <point x="0.938776" y="0.0122699" />
+                                <point x="0.918367" y="0.257669" />
+                                <point x="0" y="0.141104" />
+                            </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
@@ -525,10 +531,10 @@
                         <frame duration="1" hotspotX="0.101322" hotspotY="1.39706">
                             <image-point name="Spear location" x="0.977974" y="0.647059" />
                             <collision-poly>
-                                <point x="3.36097e-008" y="0.352941" />
-                                <point x="1" y="0.352941" />
-                                <point x="1" y="1" />
-                                <point x="3.36097e-008" y="1" />
+                                <point x="0.832599" y="0.352941" />
+                                <point x="1" y="0.558823" />
+                                <point x="1" y="0.720588" />
+                                <point x="0.85022" y="0.985294" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -561,6 +567,12 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="558504779028458" speed="5">
                         <frame duration="1" hotspotX="-0.402878" hotspotY="0.781377">
                             <image-point name="BattleAxe" x="0.978417" y="0.37247" />
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.76259" y="0.364372" />
+                                <point x="0.251799" y="0.368421" />
+                            </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
@@ -571,6 +583,12 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718841850067195" speed="5">
                         <frame duration="1" hotspotX="-0.618421" hotspotY="0.82266">
                             <image-point name="Sword Location" x="0.986842" y="0.315271" />
+                            <collision-poly>
+                                <point x="0.407895" y="0.00492611" />
+                                <point x="0.592105" y="0.00985222" />
+                                <point x="0.592105" y="0.660099" />
+                                <point x="0.407895" y="0.660099" />
+                            </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
@@ -905,10 +923,10 @@
         <object-type name="Text3" sid="526295140996704">
             <plugin id="Text" />
         </object-type>
-        <object-type global="1" name="ProgressBar" sid="369828922202758">
+        <object-type name="ProgressBar" sid="369828922202758">
             <plugin id="progressbar" />
         </object-type>
-        <object-type global="1" name="Text4" sid="825612312603629">
+        <object-type name="Text4" sid="825612312603629">
             <plugin id="Text" />
         </object-type>
         <object-type name="DesertFloor" sid="678037885076851">
@@ -949,7 +967,15 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="910347039587472" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.202247" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.202247">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0.5" y="0.876404" />
+                            <point x="0.984127" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

@@ -89,8 +89,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>483.5</x>
-                        <y>202</y>
+                        <x>484</x>
+                        <y>130</y>
                         <z>0</z>
                         <width>313</width>
                         <height>57</height>
@@ -116,8 +116,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>483.5</x>
-                        <y>386</y>
+                        <x>484</x>
+                        <y>264</y>
                         <z>0</z>
                         <width>313</width>
                         <height>57</height>
@@ -143,8 +143,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>483.5</x>
-                        <y>548</y>
+                        <x>484</x>
+                        <y>374</y>
                         <z>0</z>
                         <width>313</width>
                         <height>57</height>
@@ -170,8 +170,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>589.5</x>
-                        <y>593</y>
+                        <x>590</x>
+                        <y>419</y>
                         <z>0</z>
                         <width>101</width>
                         <height>30</height>
@@ -197,8 +197,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>589.5</x>
-                        <y>432</y>
+                        <x>590</x>
+                        <y>310</y>
                         <z>0</z>
                         <width>101</width>
                         <height>30</height>
@@ -224,11 +224,38 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>572.5</x>
-                        <y>251</y>
+                        <x>573</x>
+                        <y>179</y>
                         <z>0</z>
                         <width>135</width>
                         <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Menu" uid="94">
+                    <properties>
+                        <text>Created by Daniel Jones &amp; Steven Ovalle</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-37,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>227</x>
+                        <y>589</y>
+                        <z>0</z>
+                        <width>830</width>
+                        <height>57</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

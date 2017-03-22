@@ -2,18 +2,18 @@
 
 
 		Daniel
-
-Medevil Layout
+sounds
+Sprite art for player
+Sprite art for enemy
+coding for shooting enemys
 
 		Steven
-modern layout
-future layout
-End layout
-victory layout
-		week after break
-sprite art
-sounds
-Music
+
+sprite art Weapons
+Sprite art for buildings
+
+
+
 		Weapon ideas
 
 Primal weapons:stone,spear,axe

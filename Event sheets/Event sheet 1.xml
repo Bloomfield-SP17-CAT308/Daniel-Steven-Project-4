@@ -912,7 +912,7 @@
                                             <param id="0" name="Mouse button">0</param>
                                         </condition>
                                         <condition id="-6" name="Every X seconds" sid="434114414519527" type="System">
-                                            <param id="0" name="Interval (seconds)">0.5</param>
+                                            <param id="0" name="Interval (seconds)">0.6</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -1035,6 +1035,32 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="977923820505287">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="189835092654245" type="PlayerSword">
+                                            <param id="0" name="Object">EnemyHead</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="756908320100659" type="EnemyHead">
+                                            <param id="0" name="Instance variable">Health</param>
+                                            <param id="1" name="Value">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="330828220145185">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="591099962587392" type="PlayerSword">
+                                            <param id="0" name="Object">Enemy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="662760131845803" type="Enemy">
+                                            <param id="0" name="Instance variable">Health</param>
+                                            <param id="1" name="Value">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-group>
                         <event-group description="" inactive="1" sid="404837352139511" title="Battle Axe">
@@ -1113,6 +1139,32 @@
                                         <action id="4" name="Set animation" sid="235122924828309" type="BattleaxeAmmo">
                                             <param id="0" name="Animation">&quot;Fly&quot;</param>
                                             <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="203413691557023">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="643976531928090" type="PlayerBattleaxe">
+                                            <param id="0" name="Object">EnemyHead</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="161455006235813" type="EnemyHead">
+                                            <param id="0" name="Instance variable">Health</param>
+                                            <param id="1" name="Value">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="940454057693088">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="204959615466648" type="PlayerBattleaxe">
+                                            <param id="0" name="Object">Enemy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="828642098665730" type="Enemy">
+                                            <param id="0" name="Instance variable">Health</param>
+                                            <param id="1" name="Value">70</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1278,6 +1330,32 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="528966762565219">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="927844146377641" type="PlayerAxe">
+                                            <param id="0" name="Object">EnemyHead</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="483707827548539" type="EnemyHead">
+                                            <param id="0" name="Instance variable">Health</param>
+                                            <param id="1" name="Value">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="617617898492214">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="722981987980213" type="PlayerAxe">
+                                            <param id="0" name="Object">Enemy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="325238295216276" type="Enemy">
+                                            <param id="0" name="Instance variable">Health</param>
+                                            <param id="1" name="Value">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-group>
                         <event-group description="" inactive="1" sid="685499662067431" title="Spear">
@@ -1352,6 +1430,32 @@
                                             <param id="0" name="Object">SpearAmmo</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="789188722971082">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="525374435145765" type="PlayerSpear">
+                                            <param id="0" name="Object">EnemyHead</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="308612620282780" type="EnemyHead">
+                                            <param id="0" name="Instance variable">Health</param>
+                                            <param id="1" name="Value">100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="839796070595789">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="629953346902085" type="PlayerSpear">
+                                            <param id="0" name="Object">Enemy</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-12" name="Subtract from" sid="809207515272427" type="Enemy">
+                                            <param id="0" name="Instance variable">Health</param>
+                                            <param id="1" name="Value">100</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2418,6 +2522,14 @@
                                     <param id="0" name="Group name">&quot;Pistol&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
+                                <action id="-12" name="Set group active" sid="543892068777299" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="826671700027390" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="554776493949596">
@@ -2473,6 +2585,55 @@
                                 <action id="-2" name="Go to layout" sid="510112811055675" type="System">
                                     <param id="0" name="Layout">Title</param>
                                 </action>
+                                <action id="-21" name="Reset global variables" sid="205105615204644" type="System" />
+                                <action id="-12" name="Set group active" sid="535644151665993" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="535727379612438" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="216232666270308" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="354704453101097" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="685536149589830" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="995756866101071" type="System">
+                                    <param id="0" name="Group name">&quot;Sword&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="159265675798403" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="537500433377300" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="847642412452930" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="552614918441150" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="447768124493862" type="System">
+                                    <param id="0" name="Group name">&quot;Stone&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="561089442228308" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="819965603799714">
@@ -2489,6 +2650,55 @@
                             <actions>
                                 <action id="-2" name="Go to layout" sid="558919549915276" type="System">
                                     <param id="0" name="Layout">Title</param>
+                                </action>
+                                <action id="-21" name="Reset global variables" sid="206537102094958" type="System" />
+                                <action id="-12" name="Set group active" sid="603664419409087" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="536816941623711" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="412665456288591" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="919748274644213" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="512449530829479" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="373945284616056" type="System">
+                                    <param id="0" name="Group name">&quot;Sword&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="281970725584263" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="508392660062066" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="531212242746411" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="704876468292249" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="138076266719873" type="System">
+                                    <param id="0" name="Group name">&quot;Stone&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="899265592501419" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2590,6 +2800,42 @@
                                 </action>
                                 <action id="-12" name="Set group active" sid="478269102942431" type="System">
                                     <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="754501118852465" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="779727465533069" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="936731307202534" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="856974187168927" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="669241082121195" type="System">
+                                    <param id="0" name="Group name">&quot;Sword&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="745634873782829" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="770258085884690" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="313480385285847" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="446115186342345" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="590175280530139" type="System">
@@ -2909,6 +3155,20 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="816701968577822">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="479981997335221" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Future&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Set progress" sid="415560048203707" type="ProgressBar">
+                                    <param id="0" name="Value">Health</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="676826326935600" title="Medevil System">
@@ -3030,6 +3290,20 @@
                                 <action id="-12" name="Set group active" sid="878286947539628" type="System">
                                     <param id="0" name="Group name">&quot;Bow&quot;</param>
                                     <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="341089375193686">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="771043532755028" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Medevil&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Set progress" sid="165805125689730" type="ProgressBar">
+                                    <param id="0" name="Value">Health</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -3157,6 +3431,20 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="949488937830415">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="197701694126913" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Modern&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Set progress" sid="282729639917883" type="ProgressBar">
+                                    <param id="0" name="Value">Health</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="447984878087311" title="Primal System">
@@ -3278,6 +3566,20 @@
                                 <action id="-12" name="Set group active" sid="351644036943848" type="System">
                                     <param id="0" name="Group name">&quot;Axe&quot;</param>
                                     <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="711993048022667">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="137165889407508" type="System">
+                                    <param id="0" name="First value">LayoutName</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;Primal&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Set progress" sid="195335208338040" type="ProgressBar">
+                                    <param id="0" name="Value">Health</param>
                                 </action>
                             </actions>
                         </event-block>

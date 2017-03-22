@@ -89,8 +89,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>432</x>
-                        <y>341</y>
+                        <x>431</x>
+                        <y>292</y>
                         <z>0</z>
                         <width>416</width>
                         <height>43</height>
@@ -201,6 +201,33 @@
                         <y>478</y>
                         <z>0</z>
                         <width>564</width>
+                        <height>43</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Menu" uid="93">
+                    <properties>
+                        <text>Click to shoot</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-29,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>428</x>
+                        <y>337</y>
+                        <z>0</z>
+                        <width>416</width>
                         <height>43</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
