@@ -12,10 +12,15 @@
                         <condition id="2" name="Key is down" sid="513227717937438" type="Keyboard">
                             <param id="0" name="Key">65 (A)</param>
                         </condition>
+                        <condition id="7" inverted="1" name="Is mirrored" sid="861483485197713" type="Player" />
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="7" name="Simulate control" sid="806097344263477" type="Player">
                             <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="243240863051646" type="Player">
+                            <param id="0" name="Animation">&quot;Backpeddle&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -24,10 +29,49 @@
                         <condition id="2" name="Key is down" sid="405175759588607" type="Keyboard">
                             <param id="0" name="Key">68 (D)</param>
                         </condition>
+                        <condition id="7" inverted="1" name="Is mirrored" sid="427536900916103" type="Player" />
                     </conditions>
                     <actions>
                         <action behavior="Platform" id="7" name="Simulate control" sid="959453607549728" type="Player">
                             <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="923775551775726" type="Player">
+                            <param id="0" name="Animation">&quot;running&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="667539481683022">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="404356869059710" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                        <condition id="7" name="Is mirrored" sid="758711176809658" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="832895826833307" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="881534010209628" type="Player">
+                            <param id="0" name="Animation">&quot;running&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="467729173799676">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="797803127403026" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                        <condition id="7" name="Is mirrored" sid="667209348325223" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="310347885490589" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="761030253579136" type="Player">
+                            <param id="0" name="Animation">&quot;Backpeddle&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -68,6 +112,17 @@
                         </action>
                         <action behavior="Platform" id="4" name="Set jump strength" sid="423626132975759" type="Player">
                             <param id="0" name="Jump strength">600</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="162889273435599">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="625689968264922" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="903540584606998" type="Player">
+                            <param id="0" name="Animation">&quot;default&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
