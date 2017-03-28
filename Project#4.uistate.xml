@@ -37,7 +37,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Projectiles/" />
         <folder expanded="0" path="object-folder/Weapons/" />
         <folder expanded="0" path="object-folder/Player Weapons/" />
-        <folder expanded="1" path="object-folder/Enemys/" />
+        <folder expanded="0" path="object-folder/Enemys/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />

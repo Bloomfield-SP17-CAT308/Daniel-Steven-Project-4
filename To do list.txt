@@ -3,8 +3,6 @@
 
 		Daniel
 sounds
-Sprite art for player
-Sprite art for enemy
 coding for shooting enemys
 
 		Steven

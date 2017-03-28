@@ -533,6 +533,12 @@
                                         <action id="-18" name="Rotate clockwise" sid="912062759106461" type="Lazer">
                                             <param id="0" name="Degrees">random(-2, 2)</param>
                                         </action>
+                                        <action id="0" name="Play" sid="816677422155197" type="Audio">
+                                            <param id="0" name="Audio file">Laser1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;lazer&quot;</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="568507527682491" type="PlayerLazerRifle">
                                             <param id="0" name="Object">MuzzleFlash</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
@@ -622,6 +628,12 @@
                                         <action id="-18" name="Rotate clockwise" sid="723779010057135" type="needle">
                                             <param id="0" name="Degrees">random(-2, 2)</param>
                                         </action>
+                                        <action id="0" name="Play" sid="135464308165654" type="Audio">
+                                            <param id="0" name="Audio file">Needleer1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;needle&quot;</param>
+                                        </action>
                                         <action id="0" name="Spawn another object" sid="358967320350126" type="PlayerNeedler">
                                             <param id="0" name="Object">MuzzleFlash</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
@@ -710,6 +722,12 @@
                                         </action>
                                         <action id="-18" name="Rotate clockwise" sid="836658884747462" type="AcidGlob">
                                             <param id="0" name="Degrees">random(-2, 2)</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="469009063008989" type="Audio">
+                                            <param id="0" name="Audio file">Acid_bubble1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;acid&quot;</param>
                                         </action>
                                         <action id="0" name="Spawn another object" sid="343470178353949" type="PlayerAcidGun">
                                             <param id="0" name="Object">MuzzleFlash</param>
@@ -809,6 +827,18 @@
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">1</param>
                                         </action>
+                                        <action id="0" name="Play" sid="448525362985341" type="Audio">
+                                            <param id="0" name="Audio file">gunshot</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;gunshot&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="543101276247667" type="Audio">
+                                            <param id="0" name="Audio file">shell drop</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;shelldrop&quot;</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="929672447597892" type="System">
                                             <param id="0" name="Seconds">0.035</param>
                                         </action>
@@ -894,6 +924,18 @@
                                             <param id="0" name="Object">MuzzleFlash</param>
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="983124288351611" type="Audio">
+                                            <param id="0" name="Audio file">gunshot</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;gunshot&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="773003323265245" type="Audio">
+                                            <param id="0" name="Audio file">shell drop</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;shelldrop&quot;</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="734981136231630" type="System">
                                             <param id="0" name="Seconds">0.035</param>
@@ -999,6 +1041,18 @@
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">1</param>
                                         </action>
+                                        <action id="0" name="Play" sid="854392600353078" type="Audio">
+                                            <param id="0" name="Audio file">gunshot</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;gunshot&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="764814762951711" type="Audio">
+                                            <param id="0" name="Audio file">shell drop</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;shelldrop&quot;</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="778252962011605" type="System">
                                             <param id="0" name="Seconds">0.035</param>
                                         </action>
@@ -1087,6 +1141,12 @@
                                         <action id="4" name="Set animation" sid="350055041333818" type="SwordAmmo">
                                             <param id="0" name="Animation">&quot;Fly&quot;</param>
                                             <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="200303836108436" type="Audio">
+                                            <param id="0" name="Audio file">Thrown_object1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;woosh&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1195,6 +1255,12 @@
                                             <param id="0" name="Animation">&quot;Fly&quot;</param>
                                             <param id="1" name="From">1</param>
                                         </action>
+                                        <action id="0" name="Play" sid="406980739661740" type="Audio">
+                                            <param id="0" name="Audio file">Thrown_object1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;woosh&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                                 <event-block sid="203413691557023">
@@ -1298,6 +1364,12 @@
                                             <param id="1" name="Layer">&quot;Game&quot;</param>
                                             <param id="2" name="Image point">1</param>
                                         </action>
+                                        <action id="0" name="Play" sid="390520808729862" type="Audio">
+                                            <param id="0" name="Audio file">Arrow1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;bow&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -1382,6 +1454,12 @@
                                         <action id="4" name="Set animation" sid="227169408623279" type="AxeAmmo">
                                             <param id="0" name="Animation">&quot;Fly&quot;</param>
                                             <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="530225166975119" type="Audio">
+                                            <param id="0" name="Audio file">Thrown_object1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-5</param>
+                                            <param id="1" name="Tag (optional)">&quot;woosh&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2539,6 +2617,55 @@
                                     <param id="0" name="Layout">End</param>
                                 </action>
                                 <action id="-21" name="Reset global variables" sid="235058393692121" type="System" />
+                                <action id="33" name="Stop all" sid="178890151692220" type="Audio" />
+                                <action id="-12" name="Set group active" sid="160886553453331" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="154036405199204" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="879272092155861" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="411195132892787" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="650500161335315" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="320372607126268" type="System">
+                                    <param id="0" name="Group name">&quot;Sword&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="124606685022262" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="280131516782699" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="909807866843731" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="792214594857344" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="259704814801209" type="System">
+                                    <param id="0" name="Group name">&quot;Stone&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="639320632321306" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="405942972516344">
@@ -2585,6 +2712,12 @@
                                     <param id="0" name="Group name">&quot;SMG&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
+                                <action id="0" name="Play" sid="748675450712963" type="Audio">
+                                    <param id="0" name="Audio file">Zombie music</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;z music&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="554776493949596">
@@ -2605,6 +2738,50 @@
                                 <action id="-12" name="Set group active" sid="933301221574793" type="System">
                                     <param id="0" name="Group name">&quot;Stone&quot;</param>
                                     <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="349727606191000" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="253831145615657" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="523006176043441" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="546057394719135" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="266664374260216" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="139391438102738" type="System">
+                                    <param id="0" name="Group name">&quot;Sword&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="844350825039621" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="515258887893218" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="152142627699689" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="549035360081714" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="631826310611695" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2771,6 +2948,56 @@
                                     <param id="0" name="Group name">&quot;Stone&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
+                                <action id="0" name="Play" sid="306007408585138" type="Audio">
+                                    <param id="0" name="Audio file">Main game music</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;main music&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="214357293827303" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="445267982846835" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="602031033428861" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="294804077225509" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="195908592590326" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="494369220703856" type="System">
+                                    <param id="0" name="Group name">&quot;Sword&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="595603227828268" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="126480232001822" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="334348696034955" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="612218574491327" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="557308637759553" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="591092806857671">
@@ -2786,6 +3013,56 @@
                                 <action id="-12" name="Set group active" sid="202593671797462" type="System">
                                     <param id="0" name="Group name">&quot;Pistol&quot;</param>
                                     <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="109100014883875" type="Audio">
+                                    <param id="0" name="Audio file">Main game music</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;main music&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="781961715337228" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="579257037302270" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="711519112871191" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="184103888123147" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="727837704587435" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="464831618252030" type="System">
+                                    <param id="0" name="Group name">&quot;Sword&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="333369920466778" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="978778624957809" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="977206385449968" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="799781529344663" type="System">
+                                    <param id="0" name="Group name">&quot;Stone&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="167564043801934" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2803,6 +3080,56 @@
                                     <param id="0" name="Group name">&quot;Acidgun&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
+                                <action id="0" name="Play" sid="880722536488954" type="Audio">
+                                    <param id="0" name="Audio file">Main game music</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;main music&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="170841780421734" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="648671176159518" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="118328114643345" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="181107233898215" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="456179239275110" type="System">
+                                    <param id="0" name="Group name">&quot;Sword&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="777855939495205" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="837291013859410" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="615410926148181" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="765118136337206" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="945797086678737" type="System">
+                                    <param id="0" name="Group name">&quot;Stone&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="129458557423371" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="684278617749599">
@@ -2819,6 +3146,56 @@
                                     <param id="0" name="Group name">&quot;Sword&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
+                                <action id="0" name="Play" sid="529588367304215" type="Audio">
+                                    <param id="0" name="Audio file">Main game music</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;main music&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="906285888439903" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="336697370998499" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="668436516250697" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="825453609210462" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="888489585764124" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="502293183647072" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="444711682294698" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="997843373540023" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="966790832377549" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="512280259716627" type="System">
+                                    <param id="0" name="Group name">&quot;Stone&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="954999576219667" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="359282355777842">
@@ -2834,6 +3211,50 @@
                                 <action id="-12" name="Set group active" sid="114457307756467" type="System">
                                     <param id="0" name="Group name">&quot;Stone&quot;</param>
                                     <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="129487372716474" type="System">
+                                    <param id="0" name="Group name">&quot;Acidgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="228075367443304" type="System">
+                                    <param id="0" name="Group name">&quot;Lazer Rifle&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="494269662816645" type="System">
+                                    <param id="0" name="Group name">&quot;Needler&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="305417468386050" type="System">
+                                    <param id="0" name="Group name">&quot;Bow&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="200696218473322" type="System">
+                                    <param id="0" name="Group name">&quot;Battle Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="664409716824777" type="System">
+                                    <param id="0" name="Group name">&quot;Sword&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="862080970491131" type="System">
+                                    <param id="0" name="Group name">&quot;SMG&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="724392777377223" type="System">
+                                    <param id="0" name="Group name">&quot;Pistol&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="828250711564684" type="System">
+                                    <param id="0" name="Group name">&quot;Shotgun&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="950658925625152" type="System">
+                                    <param id="0" name="Group name">&quot;Spear&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="292074381723686" type="System">
+                                    <param id="0" name="Group name">&quot;Axe&quot;</param>
+                                    <param id="1" name="State">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -2913,6 +3334,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Stop" sid="270444726319107" type="Audio">
+                                    <param id="0" name="Tag">&quot;main music&quot;</param>
+                                </action>
                                 <action id="-43" name="Go to next/previous layout" sid="270090573527523" type="System">
                                     <param id="0" name="Which">0</param>
                                 </action>
@@ -2933,6 +3357,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Stop" sid="293359002086133" type="Audio">
+                                    <param id="0" name="Tag">&quot;main music&quot;</param>
+                                </action>
                                 <action id="-43" name="Go to next/previous layout" sid="116292621485307" type="System">
                                     <param id="0" name="Which">0</param>
                                 </action>
@@ -2953,6 +3380,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Stop" sid="368699414179051" type="Audio">
+                                    <param id="0" name="Tag">&quot;main music&quot;</param>
+                                </action>
                                 <action id="-43" name="Go to next/previous layout" sid="423299766417771" type="System">
                                     <param id="0" name="Which">0</param>
                                 </action>
@@ -2973,6 +3403,9 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="6" name="Stop" sid="331715030086174" type="Audio">
+                                    <param id="0" name="Tag">&quot;main music&quot;</param>
+                                </action>
                                 <action id="-43" name="Go to next/previous layout" sid="442809557740345" type="System">
                                     <param id="0" name="Which">0</param>
                                 </action>
@@ -3006,8 +3439,17 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="637266402276614" type="Audio">
+                                    <param id="0" name="Audio file">timevortex music</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;tv music&quot;</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="245015537879250" type="System">
                                     <param id="0" name="Seconds">3</param>
+                                </action>
+                                <action id="6" name="Stop" sid="596017283461354" type="Audio">
+                                    <param id="0" name="Tag">&quot;tv music&quot;</param>
                                 </action>
                                 <action id="-43" name="Go to next/previous layout" sid="255366545174172" type="System">
                                     <param id="0" name="Which">0</param>
@@ -3042,8 +3484,17 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="177865400212425" type="Audio">
+                                    <param id="0" name="Audio file">timevortex music</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;tv music&quot;</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="416194002921466" type="System">
                                     <param id="0" name="Seconds">3</param>
+                                </action>
+                                <action id="6" name="Stop" sid="194276012779593" type="Audio">
+                                    <param id="0" name="Tag">&quot;tv music&quot;</param>
                                 </action>
                                 <action id="-43" name="Go to next/previous layout" sid="757189126496308" type="System">
                                     <param id="0" name="Which">0</param>
@@ -3078,8 +3529,17 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="875292688905734" type="Audio">
+                                    <param id="0" name="Audio file">timevortex music</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;tv music&quot;</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="689882444034465" type="System">
                                     <param id="0" name="Seconds">3</param>
+                                </action>
+                                <action id="6" name="Stop" sid="722390251324243" type="Audio">
+                                    <param id="0" name="Tag">&quot;tv music&quot;</param>
                                 </action>
                                 <action id="-43" name="Go to next/previous layout" sid="629205648648055" type="System">
                                     <param id="0" name="Which">0</param>
